@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.jimmy.yaystarterapp.IntroFragment"
+        android:label="@string/yaystarter"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_elearningFragment"
+            app:destination="@id/elearningFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_ecommerceFragment"
+            app:destination="@id/ecommerceFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_fintechFragment"
+            app:destination="@id/fintechFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecommerceFragment"
+        android:name="com.jimmy.yaystarterapp.EcommerceFragment"
+        android:label="@string/ecommerce"
+        tools:layout="@layout/fragment_ecommerce" >
+        <action
+            android:id="@+id/action_ecommerceFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elearningFragment"
+        android:name="com.jimmy.yaystarterapp.ElearningFragment"
+        android:label="@string/elearning"
+        tools:layout="@layout/fragment_elearning" >
+        <action
+            android:id="@+id/action_elearningFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fintechFragment"
+        android:name="com.jimmy.yaystarterapp.FintechFragment"
+        android:label="@string/fintechs"
+        tools:layout="@layout/fragment_fintech" >
+        <action
+            android:id="@+id/action_fintechFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YAYStarter App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ecommerce">eCommerce</string>
+    <string name="elearning">eLearning</string>
+    <string name="fintechs">Fintechs</string>
+    <string name="yaystarter">YaY Starter</string>
+
+</resources>
